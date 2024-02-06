@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/edit_copy"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Name"
+        android:background="@drawable/ed_bg"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btn_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copy"
+        android:layout_below="@id/edit_copy"/>
+
+    <Button
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:layout_below="@id/edit_copy"
+        android:layout_alignParentEnd="true"/>
+
+    <EditText
+        android:id="@+id/edit_paste"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Paste"
+        android:background="@drawable/ed_bg"
+        android:padding="10dp"
+        android:layout_below="@id/btn_copy"/>
+    <Button
+        android:id="@+id/btn_paste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paste"
+        android:layout_below="@id/edit_paste"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+
+
+</RelativeLayout>
